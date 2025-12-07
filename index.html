@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		</h1><span class="typewriter"></span></h1>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	</head>
+
+	<body>
+	
+		<nav>
+			<a href="index.html">🏠 Accueil</a>
+			<a href="Doc\Documentation.html">📄 Documentation</a>
+			<a href="Projets\projets.html">💼 Projets</a>
+			<a href="Contact\contact.html">📬 Contact</a>
+		</nav>
+		
+		<header>
+
+			<img src="assets\Banniere.png" alt="Bannière Projet" class="banner">
+                <p>Explorez mes projets informatiques et découvrez mon expertise en développement et technologie.</p>
+			<nav class="btn-group">
+  				<a href="lien-vers-pdf.pdf" class="btn-download" target="_blank">📄 Télécharger le PDF</a>
+  				<a href="lien-vers-script.ps1" class="btn-download" target="_blank">💾 Télécharger le Script</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<section>
+				<h2>🎯 Objectifs</h2>
+				<ul>
+					<li>Partager mes compétences</li>
+					<li>Fournir de la documentation technique</li>
+					<li></li>
+				</ul>
+			</section>
+			<section class="stack fade-in">
+					<h2>🧰 Stack technique</h2>
+					<div class="stack-icons">
+						<img src="assets/bash1.svg" alt="Bash">
+						<img src="assets/powershell.svg" alt="PowerShell">
+						<img src="assets/w11.svg" alt="Windows">
+						<!-- Ajoute d'autres logos -->
+					</div>
+			</section>
+
+		</main>
+	
+	<footer>
+		<p>© 2025 – Neo_root - Projet Open-Source sous licence MIT -</p>
+	</footer>
+
+<script>
+  	const text = "Portfolio réaliser afin de partager mes compétences.";
+  	const target = document.querySelector(".typewriter");
+  	let i = 0;
+
+  	function type() {
+    if (i < text.length) {
+      target.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 40);
+    	}
+	}
+  	type();
+</script>
+
+	</body>
+</html>
