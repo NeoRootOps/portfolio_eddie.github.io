@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Site en maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: #f4f6f8;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      color: #005a9e;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚧 Site en maintenance</h1>
+    <p>Nous effectuons actuellement une mise à jour. <br>
+    Merci de revenir un peu plus tard !</p>
+  </div>
+</body>
+</html>
